@@ -24,6 +24,7 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center h-screen">
       <Head>
         <title>GOOGLE | Clone</title>
+        <link rel="icon" href="./google.png" />
         <meta name="description" content="Coded by PaglaDasu" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
