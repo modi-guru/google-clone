@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: google-clone-deploy
+  labels:
+    app: google-clone
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: google-clone
+  template:
+    metadata:
+      labels:
+        app: google-clone
+    spec:
+      containers:
+      - name: google-clone
+        image: modi123/google-clone-js
+        ports:
+        - containerPort: 3000
+
